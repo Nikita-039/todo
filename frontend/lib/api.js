@@ -1,5 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api/todos';
-
+const BASE_URL =  'http://localhost:5000/api/todos';
 export const fetchTodos = async (page = 1, limit = 10, search = '') => {
   const res = await fetch(`${BASE_URL}?page=${page}&limit=${limit}&search=${search}`);
   return await res.json();
